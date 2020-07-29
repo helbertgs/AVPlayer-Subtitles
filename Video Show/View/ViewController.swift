@@ -45,6 +45,8 @@ class ViewController: AVPlayerViewController {
                                             of: media.tracks(withMediaType: asset.mediaType)[0],
                                             at: .zero)
             }
+
+            kCMTextMarkupAttribute_BackgroundColorARGB
         }
     }
 

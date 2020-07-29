@@ -11,6 +11,8 @@ enum TextStyle {
     case underline
     case edge(EdgeStyle)
     case font(Font)
+    case alignment(Alignment)
+    case direction(Direction)
 
     var key: String {
         switch self {
@@ -22,6 +24,8 @@ enum TextStyle {
             case .underline: return String(kCMTextMarkupAttribute_UnderlineStyle)
             case .italic: return String(kCMTextMarkupAttribute_ItalicStyle)
             case .edge: return String(kCMTextMarkupAttribute_CharacterEdgeStyle)
+            case .alignment: return String(kCMTextMarkupAttribute_Alignment)
+            case .direction: return String(kCMTextMarkupAttribute_VerticalLayout)
             default: return ""
         }
     }
@@ -34,10 +38,14 @@ enum TextStyle {
                 return AVTextStyleRule(textMarkupAttributes: [ self.key: size])!
             case .background(let color), .characterBackground(let color), .foreground(let color):
                 return AVTextStyleRule(textMarkupAttributes: [ self.key: color.argb])!
-            case .edge(let style):
-                return AVTextStyleRule(textMarkupAttributes: [ self.key: style.value])!
+            case .edge(let edge):
+                return AVTextStyleRule(textMarkupAttributes: [ self.key: edge.value])!
             case .font(let font):
                 return AVTextStyleRule(textMarkupAttributes: [ font.key: font.value])!
+            case .alignment(let alignment):
+                return AVTextStyleRule(textMarkupAttributes: [ self.key: alignment.value])!
+            case .direction(let direction):
+                return AVTextStyleRule(textMarkupAttributes: [ self.key: direction.value])!
         }
     }
 }
