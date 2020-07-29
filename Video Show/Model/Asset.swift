@@ -21,7 +21,7 @@ enum Asset {
 
     var mediaType: AVMediaType {
         switch self {
-            case .mov: return .video
+            case .mov, .m3u8: return .video
             default: return .text
         }
     }

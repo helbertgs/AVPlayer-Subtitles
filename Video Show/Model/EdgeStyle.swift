@@ -1,13 +1,13 @@
 import AVKit
 
-enum Edge {
+enum EdgeStyle {
     case none
     case raised
     case depressed
     case uniform
     case dropShadow
 
-    var style: CFString {
+    var value: CFString {
         switch self {
             case .none: return kCMTextMarkupCharacterEdgeStyle_None
             case .raised: return kCMTextMarkupCharacterEdgeStyle_Raised
@@ -17,4 +17,3 @@ enum Edge {
         }
     }
 }
-

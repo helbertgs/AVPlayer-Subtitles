@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D22D69324D20E3B00514909 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D22D69224D20E3B00514909 /* Font.swift */; };
 		3D4654BC24D0B0C30069A2D4 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4654BB24D0B0C30069A2D4 /* Asset.swift */; };
 		3D4654BF24D0B4770069A2D4 /* ClearSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4654BE24D0B30C0069A2D4 /* ClearSans-Bold.ttf */; };
 		3D4654C024D0B4770069A2D4 /* ClearSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4654BD24D0B3080069A2D4 /* ClearSans-BoldItalic.ttf */; };
 		3D5F46E724CF589900E184CF /* Subtitle.srt in Resources */ = {isa = PBXBuildFile; fileRef = 3D5F46E624CF589900E184CF /* Subtitle.srt */; };
 		3DBC20B124D0E3640034111D /* UIColor+ARGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC20B024D0E3640034111D /* UIColor+ARGB.swift */; };
 		3DBC20B324D0E38D0034111D /* AVPlayerItem+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC20B224D0E38D0034111D /* AVPlayerItem+Style.swift */; };
-		3DBC20B524D0E3D00034111D /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC20B424D0E3D00034111D /* Edge.swift */; };
-		3DBC20B724D0E41E0034111D /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC20B624D0E41E0034111D /* Style.swift */; };
+		3DBC20B524D0E3D00034111D /* EdgeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC20B424D0E3D00034111D /* EdgeStyle.swift */; };
+		3DBC20B724D0E41E0034111D /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC20B624D0E41E0034111D /* TextStyle.swift */; };
 		3DBF662E24CF415F005D6C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF662D24CF415F005D6C1A /* AppDelegate.swift */; };
 		3DBF663024CF415F005D6C1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF662F24CF415F005D6C1A /* SceneDelegate.swift */; };
 		3DBF663224CF415F005D6C1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF663124CF415F005D6C1A /* ViewController.swift */; };
@@ -26,14 +27,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D22D69224D20E3B00514909 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		3D4654BB24D0B0C30069A2D4 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		3D4654BD24D0B3080069A2D4 /* ClearSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClearSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		3D4654BE24D0B30C0069A2D4 /* ClearSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClearSans-Bold.ttf"; sourceTree = "<group>"; };
 		3D5F46E624CF589900E184CF /* Subtitle.srt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subtitle.srt; sourceTree = "<group>"; };
 		3DBC20B024D0E3640034111D /* UIColor+ARGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ARGB.swift"; sourceTree = "<group>"; };
 		3DBC20B224D0E38D0034111D /* AVPlayerItem+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayerItem+Style.swift"; sourceTree = "<group>"; };
-		3DBC20B424D0E3D00034111D /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
-		3DBC20B624D0E41E0034111D /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		3DBC20B424D0E3D00034111D /* EdgeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeStyle.swift; sourceTree = "<group>"; };
+		3DBC20B624D0E41E0034111D /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		3DBF662A24CF415F005D6C1A /* Video Show.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Video Show.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBF662D24CF415F005D6C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DBF662F24CF415F005D6C1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				3D4654BB24D0B0C30069A2D4 /* Asset.swift */,
-				3DBC20B424D0E3D00034111D /* Edge.swift */,
-				3DBC20B624D0E41E0034111D /* Style.swift */,
+				3DBC20B424D0E3D00034111D /* EdgeStyle.swift */,
+				3D22D69224D20E3B00514909 /* Font.swift */,
+				3DBC20B624D0E41E0034111D /* TextStyle.swift */,
 				3DBC20AF24D0E3540034111D /* Extensions */,
 			);
 			path = Model;
@@ -215,12 +218,13 @@
 			files = (
 				3DBF663224CF415F005D6C1A /* ViewController.swift in Sources */,
 				3DBC20B124D0E3640034111D /* UIColor+ARGB.swift in Sources */,
-				3DBC20B524D0E3D00034111D /* Edge.swift in Sources */,
+				3DBC20B524D0E3D00034111D /* EdgeStyle.swift in Sources */,
 				3D4654BC24D0B0C30069A2D4 /* Asset.swift in Sources */,
 				3DBF662E24CF415F005D6C1A /* AppDelegate.swift in Sources */,
+				3D22D69324D20E3B00514909 /* Font.swift in Sources */,
 				3DBC20B324D0E38D0034111D /* AVPlayerItem+Style.swift in Sources */,
 				3DBF663024CF415F005D6C1A /* SceneDelegate.swift in Sources */,
-				3DBC20B724D0E41E0034111D /* Style.swift in Sources */,
+				3DBC20B724D0E41E0034111D /* TextStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,8 +16,8 @@ class ViewController: AVPlayerViewController {
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-//        self.online()
-        self.offline()
+        self.online()
+//        self.offline()
     }
 
     // MARK: - Private Function(s).
@@ -31,7 +31,7 @@ class ViewController: AVPlayerViewController {
         self.setup(asset: .mov)
         self.setup(asset: .vtt)
 
-        self.player = .init(playerItem: AVPlayerItem(asset: self.composition))
+        self.player = AVPlayer(playerItem: AVPlayerItem(asset: self.composition))
         self.style()
     }
 
@@ -49,16 +49,13 @@ class ViewController: AVPlayerViewController {
     }
 
     private func style() {
-        player?.currentItem?.style = [
+        player?.currentItem?.textStyle = [
             .edge(.dropShadow),
-            .background(.clear),
-            .characterBackground(.clear),
+//            .background(.clear),
+//            .characterBackground(.clear),
             .foreground(.white),
-            .bold,
-            .underline,
-            .italic,
-            .fontSize(20)
+            .font(.custom("Clear Sans")),
+//            .fontSize(5)
         ]
-
     }
 }
