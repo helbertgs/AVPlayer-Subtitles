@@ -57,20 +57,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D22D69024D1AC3B00514909 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D4654BB24D0B0C30069A2D4 /* Asset.swift */,
+				3DBC20B424D0E3D00034111D /* Edge.swift */,
+				3DBC20B624D0E41E0034111D /* Style.swift */,
+				3DBC20AF24D0E3540034111D /* Extensions */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D22D69124D1AC4100514909 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF663124CF415F005D6C1A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3DBC20AF24D0E3540034111D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3DBC20B024D0E3640034111D /* UIColor+ARGB.swift */,
 				3DBC20B224D0E38D0034111D /* AVPlayerItem+Style.swift */,
+				3DBC20B024D0E3640034111D /* UIColor+ARGB.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3DBF662124CF415F005D6C1A = {
 			isa = PBXGroup;
 			children = (
-				3DBF662C24CF415F005D6C1A /* Video Show */,
 				3DBF662B24CF415F005D6C1A /* Products */,
+				3DBF662C24CF415F005D6C1A /* Video Show */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,12 +104,9 @@
 		3DBF662C24CF415F005D6C1A /* Video Show */ = {
 			isa = PBXGroup;
 			children = (
-				3DBC20AF24D0E3540034111D /* Extensions */,
-				3D4654BB24D0B0C30069A2D4 /* Asset.swift */,
-				3DBC20B424D0E3D00034111D /* Edge.swift */,
-				3DBC20B624D0E41E0034111D /* Style.swift */,
-				3DBF663124CF415F005D6C1A /* ViewController.swift */,
-				3DBF664424CF433E005D6C1A /* Assets */,
+				3D22D69024D1AC3B00514909 /* Model */,
+				3D22D69124D1AC4100514909 /* View */,
+				3DBF664424CF433E005D6C1A /* Resources */,
 				3DBF664124CF4168005D6C1A /* Supporting Files */,
 			);
 			path = "Video Show";
@@ -100,25 +116,25 @@
 			isa = PBXGroup;
 			children = (
 				3DBF662D24CF415F005D6C1A /* AppDelegate.swift */,
-				3DBF662F24CF415F005D6C1A /* SceneDelegate.swift */,
-				3DBF663324CF415F005D6C1A /* Main.storyboard */,
 				3DBF663624CF4161005D6C1A /* Assets.xcassets */,
-				3DBF663824CF4161005D6C1A /* LaunchScreen.storyboard */,
 				3DBF663B24CF4161005D6C1A /* Info.plist */,
+				3DBF663824CF4161005D6C1A /* LaunchScreen.storyboard */,
+				3DBF663324CF415F005D6C1A /* Main.storyboard */,
+				3DBF662F24CF415F005D6C1A /* SceneDelegate.swift */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3DBF664424CF433E005D6C1A /* Assets */ = {
+		3DBF664424CF433E005D6C1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				3D4654BE24D0B30C0069A2D4 /* ClearSans-Bold.ttf */,
 				3D4654BD24D0B3080069A2D4 /* ClearSans-BoldItalic.ttf */,
 				3DBF664224CF42E0005D6C1A /* Movie.mov */,
-				3DBF664524CF47D2005D6C1A /* Subtitle.vtt */,
 				3D5F46E624CF589900E184CF /* Subtitle.srt */,
+				3DBF664524CF47D2005D6C1A /* Subtitle.vtt */,
 			);
-			name = Assets;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +233,7 @@
 				3DBF663424CF415F005D6C1A /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		3DBF663824CF4161005D6C1A /* LaunchScreen.storyboard */ = {
@@ -225,6 +242,7 @@
 				3DBF663924CF4161005D6C1A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -350,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DWJ97S65J5;
-				INFOPLIST_FILE = "Video Show/Info.plist";
+				INFOPLIST_FILE = "Video Show/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DWJ97S65J5;
-				INFOPLIST_FILE = "Video Show/Info.plist";
+				INFOPLIST_FILE = "Video Show/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
