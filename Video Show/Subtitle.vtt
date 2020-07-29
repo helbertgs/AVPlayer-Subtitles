@@ -1,0 +1,13 @@
+WEBVTT
+
+STYLE
+::cue(b) {
+  color: red;
+}
+
+00:01.000 --> 00:04.000
+Never <b>drink</b> liquid nitrogen.
+
+00:05.000 --> 00:09.000
+- It will perforate your stomach.
+- You could die.
