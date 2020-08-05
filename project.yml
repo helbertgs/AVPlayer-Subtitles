@@ -1,0 +1,13 @@
+name: Subtitles
+options:
+  bundleIdPrefix: br.com.subtitles
+targets:
+  App:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [Sources]
+    dependencies:
+      - sdk: CoreMedia.framework
+      - sdk: AVFoundation.framework
+      - sdk: AVKit.framework

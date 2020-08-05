@@ -1,0 +1,2 @@
+setup:
+	xcodegen generate

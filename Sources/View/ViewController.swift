@@ -45,19 +45,13 @@ class ViewController: AVPlayerViewController {
                                             of: media.tracks(withMediaType: asset.mediaType)[0],
                                             at: .zero)
             }
-
-            kCMTextMarkupAttribute_BackgroundColorARGB
         }
     }
 
     private func style() {
         player?.currentItem?.textStyle = [
-            .edge(.dropShadow),
-//            .background(.clear),
-//            .characterBackground(.clear),
-            .foreground(.white),
-            .font(.custom("Clear Sans")),
-//            .fontSize(5)
+            .font(.monospaceSansSerif),
+            .bold
         ]
     }
 }
