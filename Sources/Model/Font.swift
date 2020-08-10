@@ -1,6 +1,6 @@
 import CoreMedia
 
-enum Font: Equatable {
+public enum Font: Equatable {
     case `default`
     case serif
     case sansSerif

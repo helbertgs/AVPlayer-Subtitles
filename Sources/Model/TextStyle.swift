@@ -1,7 +1,7 @@
 import AVKit
 import UIKit
 
-enum TextStyle {
+public enum TextStyle {
     case alignment(Alignment)
     case background(UIColor)
     case bold

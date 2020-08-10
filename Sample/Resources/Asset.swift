@@ -1,6 +1,6 @@
 import AVFoundation
 
-enum Asset {
+public enum Asset {
     case mov
     case vtt
     case srt

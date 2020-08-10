@@ -2,12 +2,25 @@ name: Subtitles
 options:
   bundleIdPrefix: br.com.subtitles
 targets:
-  App:
+  Framework:
+      name: AVPlayerItemSubtitles
+      type: framework
+      platform: iOS
+      deploymentTarget: "13.0"
+      sources: [Sources]
+  Application:
+    name: Sample
     type: application
     platform: iOS
     deploymentTarget: "13.0"
-    sources: [Sources]
+    sources: [Sample]
     dependencies:
-      - sdk: CoreMedia.framework
-      - sdk: AVFoundation.framework
-      - sdk: AVKit.framework
+      - target: AVPlayerItemSubtitles
+  Unit:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [Tests]
+    dependencies:
+      - target: AVPlayerItemSubtitles
+  

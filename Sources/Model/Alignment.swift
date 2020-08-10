@@ -1,6 +1,6 @@
 import CoreMedia
 
-enum Alignment: String, Codable, Equatable {
+public enum Alignment: String, Codable, Equatable {
     case start = "CMWDA_start"
     case middle = "CMWDA_middle"
     case end = "CMWDA_end"

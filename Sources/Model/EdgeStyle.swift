@@ -1,6 +1,6 @@
 import AVKit
 
-enum EdgeStyle: String, Codable, Equatable {
+public enum EdgeStyle: String, Codable, Equatable {
     case none = "CMCharacterEdgeStyle_None"
     case raised = "CMCharacterEdgeStyle_Raised"
     case depressed = "CMCharacterEdgeStyle_Depressed"
